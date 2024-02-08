@@ -3,11 +3,25 @@
  */
 
 import java.util.Scanner;
+import java.util.Arrays;
 import java.util.Random;
+
 public class assignment2 {
+
+    public static void printMenu () {
+
+        System.out.println("Please choose one: \n
+        \t1. find the minimum of the array\n
+        \t2. find the maximum of the array\n
+        \t3. find the average of the array\n
+        \t4. find the sum of the elements with the odd indexes\n
+        \t5. find the sum of the elements with the even indexes\n
+        enter 0 to exit");
+    }
+
     public static void main(String[] args) {
 
-        int menuChoice = 0;
+        int menuChoice = 0; 
         int arraySize = 0;
         int randomNumber = 0;
 
@@ -15,8 +29,12 @@ public class assignment2 {
         Scanner sc = new Scanner (System.in);
         
         // ask the array size
-        System.out.println("Please enter the array size.");
-        arraySize = sc.nextInt();
+        while (arraySize <= 0 || arraySize > 100) {
+            System.out.println("Please enter the array size between 0 and 100.");
+            arraySize = sc.nextInt();
+            
+        }
+
         int[] arr = new int[arraySize];
 
         // generate the random array
@@ -25,9 +43,43 @@ public class assignment2 {
             arr[i] = randomNumber;
         }
 
-        // show the menu
+        System.out.println("\nRandomly generated array is:");
+        System.out.println(Arrays.toString(arr));
+
+        do {
+            printMenu();
+            menuChoice = sc.nextInt();
+
+            if (menuChoice == 0) {
+
+
+            }
+            else if (menuChoice == 1) {
+
+                
+            }
+            else if (menuChoice == 2) {
+
+
+            }
+            else if (menuChoice == 3) {
+
+                
+            }
+            else if (menuChoice == 4) {
+
+                
+            }
+            else if (menuChoice == 5) {
+
+                
+            }
+            else if (menuChoice == 6) {
+
+                
+            }
+
+        } while (menuChoice != 0);
         
-
-
     }
 }
