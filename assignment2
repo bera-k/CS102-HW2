@@ -129,27 +129,26 @@ public class assignment2 {
                 System.out.println(" you have exited the program");
             }
             else if (menuChoice == 1) {
-                System.out.println(findMinOftheArray(arr));
-                
+                System.out.println("The minimum element is: " + findMinOftheArray(arr));
             }
             else if (menuChoice == 2) {
-                System.out.println(findMaxOftheArray(arr));
-
+                System.out.println("The maximum element is: " + findMaxOftheArray(arr));
             }
             else if (menuChoice == 3) { 
-                System.out.println(findAverage(arr));
-
-                
+                System.out.println("The average of the elements is: " + findAverage(arr));
             }
             else if (menuChoice == 4) {
+                System.out.println("The differences are:");
                 findDifferencesFromAverage(arr, findAverage(arr));
                 System.out.println();
-
-                
             }
             else if (menuChoice == 5) {
 
                 
+            }
+
+            else if (menuChoice == 6) {
+
             }
 
         } while (menuChoice != 0);
