@@ -27,24 +27,7 @@ public class assignment2 {
 
         // show the menu
 
-      public static int findEvenSum(int[]array)
-      {
-        int sum=0;
-       for(int i=0;i<array.length;i=i+2)
-       {
-        sum=sum+array[i];
-       }
-      return sum;
-     }
-     public static int findOddSum(int[]array)
-     {
-      int sum=0;
-     for(int i=1;i<array.length;i=i+2)
-     {
-        sum=sum+array[i];
-     }
-      return sum;
-     }
+      
 
        
 
