@@ -18,19 +18,19 @@ public class assignment2 {
         return average;
     }
 
-    public static double[] findDifferencesFromAverage(int[] nums, double average){
+    public static void findDifferencesFromAverage(int[] nums, double average){
         int length=nums.length;
         double[] empty = new double[0];
         if (length == 0){
-            return empty ;// If there are no elements, then it will return an empty array.
+            printArray(empty) ;// If there are no elements, then it will return an empty array.
         }
         double[] differences=new double[length];
         double difference = 0;
-        for(int i=0; i < length; i++){
+        for(int i = 0; i < length; i++){
             difference = nums[i] - average;// It calculates the difference between each element and the average.
             differences[i] = difference;
         }
-        return differences;
+        printArray(differences);
     }
 
     public static int findMinOftheArray(int nums[]){
@@ -75,13 +75,7 @@ public class assignment2 {
 
     public static void printMenu () {
 
-        System.out.println("Please choose one: \n
-        \t1. find the minimum of the array\n
-        \t2. find the maximum of the array\n
-        \t3. find the average of the array\n
-        \t4. find the sum of the elements with the odd indexes\n
-        \t5. find the sum of the elements with the even indexes\n
-        enter 0 to exit"):
+        System.out.println("Please choose one: \n\t1. find the minimum of the array\n\t2. find the maximum of the array\n\t3. find the average of the array\n\t4.ggdghdhgs \n\t5. find the sum of the elements with the odd indexes\n\t6. find the sum of the elements with the even indexes\nenter 0 to exit");
     }
 
     public static void main(String[] args) {
@@ -116,30 +110,28 @@ public class assignment2 {
             menuChoice = sc.nextInt();
 
             if (menuChoice == 0) {
-
-
+                System.out.println(" you have exited the program");
             }
             else if (menuChoice == 1) {
-
+                System.out.println(findMinOftheArray(arr));
                 
             }
             else if (menuChoice == 2) {
-
+                System.out.println(findMaxOftheArray(arr));
 
             }
-            else if (menuChoice == 3) {
+            else if (menuChoice == 3) { 
+                System.out.println(findAverage(arr));
 
                 
             }
             else if (menuChoice == 4) {
+                findDifferencesFromAverage(arr, findAverage(arr));
+                System.out.println();
 
                 
             }
             else if (menuChoice == 5) {
-
-                
-            }
-            else if (menuChoice == 6) {
 
                 
             }
