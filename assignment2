@@ -1,3 +1,15 @@
+/**
+ * 10.02.2024
+ * 
+ * This program generates a random integer array by a given size.
+ * And there are other functions like finding average, min-max element.
+ * 
+ * @author @MELIKEFEYZABAHADIRLI
+ * @author @bera-k
+ * @author @BerraAlkis
+ * 
+ */
+
 import java.util.Scanner;
 import java.util.Arrays;
 import java.util.Random;
@@ -91,14 +103,14 @@ public class assignment2 {
 
     public static void printMenu () {
 
-        System.out.println("Please choose one: \n
-            \t1. find the minimum of the array\n
-            \t2. find the maximum of the array\n
-            \t3. find the average of the array\n
-            \t4. find the differences \n
-            \t5. find the sum of the elements with the odd indexes\n
-            \t6. find the sum of the elements with the even indexes\n
-            enter 0 to exit");
+        System.out.println("Please choose one:");
+        System.out.println("\t1. find the minimum of the array");
+        System.out.println("\t2. find the maximum of the array");
+        System.out.println("\t3. find the average of the array");
+        System.out.println("\t4. find the differences");   
+        System.out.println("\t5. find the sum of the elements with the odd indexes");
+        System.out.println("\t6. find the sum of the elements with the even indexes");
+        System.out.println("enter 0 to exit");
     }
 
     public static void main(String[] args) {
@@ -110,11 +122,10 @@ public class assignment2 {
         Random rand = new Random();
         Scanner sc = new Scanner (System.in);
         
-        // ask the array size
+        // ask the array size until the user enters a proper one
         while (arraySize <= 0 || arraySize > 100) {
             System.out.println("Please enter the array size between 0 and 100.");
-            arraySize = sc.nextInt();
-            
+            arraySize = sc.nextInt();            
         }
 
         int[] arr = new int[arraySize];
