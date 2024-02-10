@@ -33,11 +33,11 @@ public class assignment2 {
     }
 
     public static int findMinOftheArray(int nums[]){
-        int length=nums.length;
+        int length = nums.length;
         if(length == 0){
             return - 1; //If there are no elemnets, I will return -1.
         }
-        int min=nums[0];
+        int min = nums[0];
         for (int i = 1; i < length; i++){
             if (nums[i] < min){
                 min = nums[i];
@@ -70,9 +70,9 @@ public class assignment2 {
 
     public static int findOddSum(int[]array){
         int sum = 0;
-        for (int i=1;i<array.length;i=i+2)
+        for (int i=1; i < array.length; i=i+2)
         {
-            sum=sum+array[i];
+            sum = sum + array[i];
         }
         return sum;
     }
@@ -91,7 +91,14 @@ public class assignment2 {
 
     public static void printMenu () {
 
-        System.out.println("Please choose one: \n\t1. find the minimum of the array\n\t2. find the maximum of the array\n\t3. find the average of the array\n\t4.ggdghdhgs \n\t5. find the sum of the elements with the odd indexes\n\t6. find the sum of the elements with the even indexes\nenter 0 to exit");
+        System.out.println("Please choose one: \n
+            \t1. find the minimum of the array\n
+            \t2. find the maximum of the array\n
+            \t3. find the average of the array\n
+            \t4. find the differences \n
+            \t5. find the sum of the elements with the odd indexes\n
+            \t6. find the sum of the elements with the even indexes\n
+            enter 0 to exit");
     }
 
     public static void main(String[] args) {
@@ -143,12 +150,12 @@ public class assignment2 {
                 System.out.println();
             }
             else if (menuChoice == 5) {
-
+                System.out.println("Sum of the elements with odd indexes are: " + findOddSum(arr));
                 
             }
 
             else if (menuChoice == 6) {
-
+                System.out.println("Sum of the elements with even indexes are: " + findEvenSum(arr));
             }
 
         } while (menuChoice != 0);
