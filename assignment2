@@ -151,14 +151,14 @@ public class assignment2 {
             }
             else if (menuChoice == 5) {
                 System.out.println("Sum of the elements with odd indexes are: " + findOddSum(arr));
-                
             }
-
             else if (menuChoice == 6) {
                 System.out.println("Sum of the elements with even indexes are: " + findEvenSum(arr));
             }
 
         } while (menuChoice != 0);
+
+        sc.close();
         
     }
 }
