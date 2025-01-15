@@ -14,5 +14,4 @@ Find the sum of elements with odd- and even-numbered indexes. For example, if th
 Each person in the group should be responsible for one or more tasks above. You may use different class files if necessary, you need to include a main method to show your working program. You should work on different computers, push your commits to the remote repository and manage merge conflicts when necessary. Each person in the group should have at least one commit to the remote repository, we should be able to see that in the history of the remote repository.
 As a group, show the working program and your repository’s commit history to the TA/Tutor in the lab.
 
-AAAAAAAAAAAAAAA YETER
 
